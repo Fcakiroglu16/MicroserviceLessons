@@ -1,16 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern", "OutboxPattern\OutboxPattern.csproj", "{163F671D-D52B-4C83-AFCB-53E8A2A3A524}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{163F671D-D52B-4C83-AFCB-53E8A2A3A524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{163F671D-D52B-4C83-AFCB-53E8A2A3A524}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{163F671D-D52B-4C83-AFCB-53E8A2A3A524}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{163F671D-D52B-4C83-AFCB-53E8A2A3A524}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
