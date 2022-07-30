@@ -1,3 +1,133 @@
+POST https://localhost:7116/api/Auth
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045750.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045749-1.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045749.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045747.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045724.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045723.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045719.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045658.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045657.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045655.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045557.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+Content-Type: application/json
+> {% client.global.set("auth_token", response.body.json.jwt); %}: 
+
+###
+
+POST https://localhost:7116/api/Auth
+Content-Type: application/json
+> {% client.global.set("auth_token", response.body.json.jwt); %}: 
+
+###
+
+POST https://localhost:7116/api/Auth
+Content-Type: application/json
+> {% client.global.set("auth_token", response.body.json.jwt); %}: 
+
+###
+
+POST https://localhost:7116/api/Auth
+Content-Type: application/json
+> {% client.global.set("auth_token", response.body.json.jwt); %}: 
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045420.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045356.200.json
+
+###
+
+POST https://localhost:7116/api/Auth
+
+<> 2022-07-30T045319.200.json
+
+###
+
+GET https://localhost:7116/api/Auth
+
+<> 2022-07-30T045248.500.txt
+
+###
+
+GET https://localhost:7116/api/Auth
+
+<> 2022-07-30T045205.500.txt
+
+###
+
+GET https://localhost:7116/api/Auth
+
+<> 2022-07-30T045149.500.txt
+
+###
+
 POST https://localhost:7073/api/Orders
 
 ###

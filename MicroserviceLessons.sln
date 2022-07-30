@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSACreate.App", "RSACreate.App\RSACreate.App.csproj", "{06C970AE-6851-46D3-9F3A-50459E05F396}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.API", "App.API\App.API.csproj", "{D57E8529-4A5E-4457-8E70-6C242E056951}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{06C970AE-6851-46D3-9F3A-50459E05F396}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06C970AE-6851-46D3-9F3A-50459E05F396}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06C970AE-6851-46D3-9F3A-50459E05F396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D57E8529-4A5E-4457-8E70-6C242E056951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57E8529-4A5E-4457-8E70-6C242E056951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57E8529-4A5E-4457-8E70-6C242E056951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D57E8529-4A5E-4457-8E70-6C242E056951}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

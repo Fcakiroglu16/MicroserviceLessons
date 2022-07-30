@@ -4,9 +4,17 @@
     <projectFile>RSACreate.App/RSACreate.App.csproj</projectFile>
     <projectFile profileName="OutboxPattern">OutboxPattern/OutboxPattern.csproj</projectFile>
     <projectFile profileName="IIS Express">OutboxPattern/OutboxPattern.csproj</projectFile>
+    <projectFile profileName="App.API">App.API/App.API.csproj</projectFile>
+    <projectFile profileName="IIS Express">App.API/App.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6bfbab7-8b4f-43fd-aa89-3232681f7167" name="Changes" comment="rsa public/private created" />
+    <list default="true" id="d6bfbab7-8b4f-43fd-aa89-3232681f7167" name="Changes" comment="rsa public/private created">
+      <change afterPath="$PROJECT_DIR$/App.API/Services/RsaServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroserviceLessons.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroserviceLessons.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +28,15 @@
       </map>
     </option>
   </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -28,7 +45,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.RSACreate.App">
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="HttpClient.HttpRequestRunConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.App.API">
     <configuration name="RSACreate.App" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -43,6 +67,45 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="All in MicroserviceLessons-endpoints_8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/MicroserviceLessons-endpoints_8.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="All in MicroserviceLessons-endpoints_9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/MicroserviceLessons-endpoints_9.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="MicroserviceLessons-endpoints_8 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/MicroserviceLessons-endpoints_8.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="App.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/App.API/App.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="App.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="App.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/App.API/App.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -77,6 +140,13 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.All in MicroserviceLessons-endpoints_9" />
+        <item itemvalue="HTTP Request.MicroserviceLessons-endpoints_8 | #1" />
+        <item itemvalue="HTTP Request.All in MicroserviceLessons-endpoints_8" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="rsa public/private created">
@@ -105,5 +175,37 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rsa public/private created" />
     <option name="LAST_COMMIT_MESSAGE" value="rsa public/private created" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/App.API/Services/RsaServices.cs</url>
+          <line>20</line>
+          <properties documentPath="$PROJECT_DIR$/App.API/Services/RsaServices.cs" initialLine="22" containingFunctionPresentation="method 'GetSigningCredentialsWithPrivateKey'">
+            <startOffsets>
+              <option value="438" />
+            </startOffsets>
+            <endOffsets>
+              <option value="576" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/App.API/Controllers/AuthController.cs</url>
+          <line>50</line>
+          <properties documentPath="$PROJECT_DIR$/App.API/Controllers/AuthController.cs" initialLine="50" containingFunctionPresentation="method 'ValidateTokenAsymmetric'">
+            <startOffsets>
+              <option value="1499" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1500" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
