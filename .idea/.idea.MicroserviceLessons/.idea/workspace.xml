@@ -33,7 +33,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.OutboxPattern">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication1">
     <configuration name="OutboxPattern" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/OutboxPattern/OutboxPattern.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
