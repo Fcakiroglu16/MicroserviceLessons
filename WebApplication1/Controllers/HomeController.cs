@@ -17,12 +17,17 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+
+        TempData["data"] = _protector.Protect("asp.net");
         
         return View();
     }
 
     public IActionResult Privacy()
     {
+
+    var data=    _protector.Unprotect(TempData["data"].ToString());
+        
         return View();
     }
 
