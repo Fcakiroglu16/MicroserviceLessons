@@ -6,14 +6,16 @@
     <projectFile profileName="IIS Express">OutboxPattern/OutboxPattern.csproj</projectFile>
     <projectFile profileName="App.API">App.API/App.API.csproj</projectFile>
     <projectFile profileName="IIS Express">App.API/App.API.csproj</projectFile>
+    <projectFile profileName="OpenIdDictApp">OpenIdDictApp/OpenIdDictApp.csproj</projectFile>
+    <projectFile profileName="IIS Express">OpenIdDictApp/OpenIdDictApp.csproj</projectFile>
+    <projectFile profileName="MicroService1.API">MicroService1.API/MicroService1.API.csproj</projectFile>
+    <projectFile profileName="IIS Express">MicroService1.API/MicroService1.API.csproj</projectFile>
+    <projectFile profileName="WebApplication2">WebApplication2/WebApplication2.csproj</projectFile>
+    <projectFile profileName="IIS Express">WebApplication2/WebApplication2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6bfbab7-8b4f-43fd-aa89-3232681f7167" name="Changes" comment="rsa public/private created">
-      <change afterPath="$PROJECT_DIR$/App.API/Services/RsaServices.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroserviceLessons.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroserviceLessons.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +29,14 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/App.API/Services/RsaServices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/767847a046a7841926234413f3af11914523c85f832b646664bed7b4e3b1d/OpenIddictExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7733bdb26b2be012c4266979a95d3728e74790201f91a02df4529ee6c2f37/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ab12f14940eb643e4c9124a6b635f31cc614159fed26f3d5a34666775c/OpenIddictApplicationDescriptor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d214e59a10af4495f9d34f678c9bbf36ac5f5c794ba3e84efbc28b249bdd71/OpenIddictRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fc5e4360509b87d32d9532b7fb81ec1a8a249e9b37eff1c8523ca87c5c744b/OpenIddictMessage.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
@@ -140,6 +150,16 @@
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.App.API" />
+      <item itemvalue=".NET Launch Settings Profile.App.API: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.OutboxPattern" />
+      <item itemvalue=".NET Launch Settings Profile.OutboxPattern: IIS Express" />
+      <item itemvalue=".NET Project.RSACreate.App" />
+      <item itemvalue="HTTP Request.All in MicroserviceLessons-endpoints_8" />
+      <item itemvalue="HTTP Request.All in MicroserviceLessons-endpoints_9" />
+      <item itemvalue="HTTP Request.MicroserviceLessons-endpoints_8 | #1" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.All in MicroserviceLessons-endpoints_9" />
@@ -197,10 +217,10 @@
           <line>50</line>
           <properties documentPath="$PROJECT_DIR$/App.API/Controllers/AuthController.cs" initialLine="50" containingFunctionPresentation="method 'ValidateTokenAsymmetric'">
             <startOffsets>
-              <option value="1499" />
+              <option value="-1" />
             </startOffsets>
             <endOffsets>
-              <option value="1500" />
+              <option value="-1" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />
