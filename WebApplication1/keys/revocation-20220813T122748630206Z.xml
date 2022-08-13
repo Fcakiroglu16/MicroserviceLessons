@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<revocation version="1">
+    <revocationDate>2022-08-13T15:27:48.630206+03:00</revocationDate>
+    <!-- All keys created before the revocation date are revoked. -->
+    <key id="*"/>
+    <reason>Revocation reason here.</reason>
+</revocation>
