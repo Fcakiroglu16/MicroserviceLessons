@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  exampleapp.api:
+    
+    ports:
+      - "8000:80"
+      - "8001:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=Password12*
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/DockerCertificate.pfx
+    volumes:
+      - ~/.aspnet/https:/https
+  exampleapp2.api:
+ 
+    ports:
+      - "8002:80"
+      - "8003:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=Password12*
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/DockerCertificate.pfx
+    volumes:
+      - ~/.aspnet/https:/https

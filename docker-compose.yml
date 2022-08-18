@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  exampleapp.api:
+    image: exampleappapi
+    build:
+      context: .
+      dockerfile: ExampleApp.API/Dockerfile
+  exampleapp2.api:
+    image: exampleappapi2
+    build:
+      context: .
+      dockerfile: ExampleApp2.API/Dockerfile
