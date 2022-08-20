@@ -5,6 +5,8 @@
     <projectFile profileName="IIS Express">App.API/App.API.csproj</projectFile>
     <projectFile profileName="ExampleApp.API">ExampleApp.API/ExampleApp.API.csproj</projectFile>
     <projectFile profileName="IIS Express">ExampleApp.API/ExampleApp.API.csproj</projectFile>
+    <projectFile profileName="ExampleApp2.API">ExampleApp2.API/ExampleApp2.API.csproj</projectFile>
+    <projectFile profileName="IIS Express">ExampleApp2.API/ExampleApp2.API.csproj</projectFile>
     <projectFile profileName="IIS Express">MicroService1.API/MicroService1.API.csproj</projectFile>
     <projectFile profileName="MicroService1.API">MicroService1.API/MicroService1.API.csproj</projectFile>
     <projectFile profileName="IIS Express">MiniApp1/MiniApp1.csproj</projectFile>
@@ -22,11 +24,9 @@
     <projectFile profileName="WebApplication2">WebApplication2/WebApplication2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="initialize">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="1. step">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroserviceLessons.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroserviceLessons.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +43,55 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectId" id="2DXcWkEswvFFktSosDHJ9LRveHp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Docker"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ExampleApp.API">
+    <configuration name="ExampleApp2.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ExampleApp2.API/ExampleApp2.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="ExampleApp2.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ExampleApp2.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ExampleApp2.API/ExampleApp2.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="ExampleApp.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ExampleApp.API/ExampleApp.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -161,6 +200,8 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue=".NET Launch Settings Profile.ExampleApp2.API" />
+      <item itemvalue=".NET Launch Settings Profile.ExampleApp2.API: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.ExampleApp.API" />
       <item itemvalue=".NET Launch Settings Profile.ExampleApp.API: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebApplication1" />
@@ -175,6 +216,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="initialize">
       <created>1659828725297</created>
@@ -190,8 +232,27 @@
       <option name="project" value="LOCAL" />
       <updated>1659828761571</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1. step">
+      <created>1660681425266</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660681425266</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="1. step" />
+      <created>1660848905393</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660848905393</updated>
+      <workItem from="1660848909067" duration="394000" />
+      <workItem from="1660866004791" duration="41000" />
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
@@ -208,7 +269,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize" />
+    <MESSAGE value="1. step" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. step" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
