@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ServiceA.Services;
 
 namespace ServiceA.Controllers;
 
@@ -7,23 +8,18 @@ namespace ServiceA.Controllers;
 public class AController : ControllerBase
 {
     private readonly ILogger<AController> _logger;
-
-    public AController(ILogger<AController> logger)
+    private readonly BService _bService;
+    public AController(ILogger<AController> logger, BService bService)
     {
         _logger = logger;
+        _bService = bService;
     }
 
     [HttpGet]
     public async Task<IActionResult> Get()
     {
         _logger.LogInformation("Get(A Service)  method  worked");
-        var httpClient = new HttpClient();
-
-        var response = await httpClient.GetAsync("http://ServiceB.api/api/B");
-
-        if (response.IsSuccessStatusCode) _logger.LogInformation("ServiceB was made request successfully");
-
-    
+        await _bService.Get();
         return Ok();
     }
 

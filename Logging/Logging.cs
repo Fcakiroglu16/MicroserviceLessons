@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using Serilog.Events;
 using Serilog.Exceptions;
 using Serilog.Formatting.Elasticsearch;
 using Serilog.Sinks.Elasticsearch;
@@ -18,6 +19,7 @@ public static class Logging
                 .Enrich.WithExceptionDetails()
                 .Enrich.WithProperty("ApplicationName", env.ApplicationName)
                 .Enrich.WithProperty("EnvironmentName", env.EnvironmentName)
+                .MinimumLevel.Override("Microsoft", LogEventLevel.Error)
                 .WriteTo.Console();
 
             var elasticSearchUrl =

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ServiceB.Service;
 
 namespace ServiceB.Controllers;
 
@@ -7,10 +8,12 @@ namespace ServiceB.Controllers;
 public class BController : ControllerBase
 {
     private readonly ILogger<BController> _logger;
+    private readonly CService _cService;
 
-    public BController(ILogger<BController> logger)
+    public BController(ILogger<BController> logger, CService cService)
     {
         _logger = logger;
+        _cService = cService;
     }
 
     [HttpGet]
@@ -18,11 +21,8 @@ public class BController : ControllerBase
     {
         
         _logger.LogInformation("Get(B Service)  method  worked");
-        var httpClient = new HttpClient();
-
-        var response = await httpClient.GetAsync("http://ServiceC.api/api/C");
-
-        if (response.IsSuccessStatusCode) _logger.LogInformation("ServiceC was made request successfully");
+        await _cService.Get();
+        
 
        
         return Ok();
