@@ -1,0 +1,25 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5119
+        }
+      ],
+      "UpstreamPathTemplate": "/services/service-a/{everything}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post",
+        "Put",
+        "Delete"
+      ],
+      "UpstreamScheme": "http"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5130"
+  }
+}

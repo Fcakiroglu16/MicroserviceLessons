@@ -1,8 +1,7 @@
 version: '3.4'
 
 services:
-  exampleapp.api:
-    
+  ServiceA.api:
     ports:
       - "8000:80"
       - "8001:443"
@@ -10,11 +9,13 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ASPNETCORE_Kestrel__Certificates__Default__Password=Password12*
-      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/DockerCertificate.pfx
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/mcertificate.pfx
     volumes:
-      - ~/.aspnet/https:/https
-  exampleapp2.api:
- 
+      - /Users/fatihcakiroglu/Desktop/SelfSignedCertificate:/https
+    networks:
+      - es-net
+  
+  ServiceB.api:
     ports:
       - "8002:80"
       - "8003:443"
@@ -22,6 +23,35 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ASPNETCORE_Kestrel__Certificates__Default__Password=Password12*
-      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/DockerCertificate.pfx
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/mcertificate.pfx
     volumes:
-      - ~/.aspnet/https:/https
+      - /Users/fatihcakiroglu/Desktop/SelfSignedCertificate:/https
+    networks:
+      - es-net
+  
+  ServiceC.api:
+    ports:
+      - "8004:80"
+      - "8005:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=Password12*
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/mcertificate.pfx
+    volumes:
+      - /Users/fatihcakiroglu/Desktop/SelfSignedCertificate:/https
+    networks:
+      - es-net
+  gateway.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=Password12*
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/mcertificate.pfx
+    ports:
+      - "9000:80"
+      - "9001:443"
+    volumes:
+      - /Users/fatihcakiroglu/Desktop/SelfSignedCertificate:/https
+    networks:
+      - es-net

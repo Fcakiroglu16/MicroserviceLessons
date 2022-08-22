@@ -7,6 +7,8 @@
     <projectFile profileName="IIS Express">ExampleApp.API/ExampleApp.API.csproj</projectFile>
     <projectFile profileName="ExampleApp2.API">ExampleApp2.API/ExampleApp2.API.csproj</projectFile>
     <projectFile profileName="IIS Express">ExampleApp2.API/ExampleApp2.API.csproj</projectFile>
+    <projectFile profileName="Gateway">Gateway/Gateway.csproj</projectFile>
+    <projectFile profileName="IIS Express">Gateway/Gateway.csproj</projectFile>
     <projectFile profileName="IIS Express">MicroService1.API/MicroService1.API.csproj</projectFile>
     <projectFile profileName="MicroService1.API">MicroService1.API/MicroService1.API.csproj</projectFile>
     <projectFile profileName="IIS Express">MiniApp1/MiniApp1.csproj</projectFile>
@@ -18,15 +20,39 @@
     <projectFile profileName="IIS Express">OutboxPattern/OutboxPattern.csproj</projectFile>
     <projectFile profileName="OutboxPattern">OutboxPattern/OutboxPattern.csproj</projectFile>
     <projectFile>RSACreate.App/RSACreate.App.csproj</projectFile>
+    <projectFile profileName="IIS Express">ServiceA/ServiceA.csproj</projectFile>
+    <projectFile profileName="ServiceA">ServiceA/ServiceA.csproj</projectFile>
+    <projectFile profileName="IIS Express">ServiceB/ServiceB.csproj</projectFile>
+    <projectFile profileName="ServiceB">ServiceB/ServiceB.csproj</projectFile>
+    <projectFile profileName="IIS Express">ServiceC/ServiceC.csproj</projectFile>
+    <projectFile profileName="ServiceC">ServiceC/ServiceC.csproj</projectFile>
     <projectFile profileName="IIS Express">WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="WebApplication1">WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="IIS Express">WebApplication2/WebApplication2.csproj</projectFile>
     <projectFile profileName="WebApplication2">WebApplication2/WebApplication2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="1. step">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e.xml" beforeDir="false" />
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="clear">
+      <change afterPath="$PROJECT_DIR$/Gateway/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/CorrelationIdMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/configuration.development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/configuration.production.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logging/Logging.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceA/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceA/CorrelationIdMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceA/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceB/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceB/CorrelationIdMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceB/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceC/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceC/CorrelationIdMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceC/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroserviceLessons.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroserviceLessons.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dcproj" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dcproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.override.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.override.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +62,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="certificate" />
       </map>
     </option>
   </component>
@@ -51,17 +77,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.ExampleApp.API">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.ServiceA">
+    <configuration name="Microservices" type="CompoundRunConfigurationType">
+      <toRun name="Gateway" type="LaunchSettings" />
+      <toRun name="ServiceA" type="LaunchSettings" />
+      <method v="2" />
+    </configuration>
     <configuration name="ExampleApp2.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ExampleApp2.API/ExampleApp2.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -122,6 +153,36 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Gateway" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Gateway/Gateway.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="Gateway" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Gateway: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Gateway/Gateway.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="OutboxPattern" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/OutboxPattern/OutboxPattern.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -139,6 +200,96 @@
     </configuration>
     <configuration name="OutboxPattern: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/OutboxPattern/OutboxPattern.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ServiceA" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ServiceA/ServiceA.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="ServiceA" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ServiceA: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ServiceA/ServiceA.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ServiceB" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ServiceB/ServiceB.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="ServiceB" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ServiceB: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ServiceB/ServiceB.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ServiceC" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ServiceC/ServiceC.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="ServiceC" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ServiceC: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ServiceC/ServiceC.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -200,6 +351,14 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue=".NET Launch Settings Profile.Gateway" />
+      <item itemvalue=".NET Launch Settings Profile.Gateway: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.ServiceA" />
+      <item itemvalue=".NET Launch Settings Profile.ServiceA: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.ServiceB" />
+      <item itemvalue=".NET Launch Settings Profile.ServiceB: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.ServiceC" />
+      <item itemvalue=".NET Launch Settings Profile.ServiceC: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.ExampleApp2.API" />
       <item itemvalue=".NET Launch Settings Profile.ExampleApp2.API: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.ExampleApp.API" />
@@ -208,6 +367,7 @@
       <item itemvalue=".NET Launch Settings Profile.WebApplication1: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.OutboxPattern" />
       <item itemvalue=".NET Launch Settings Profile.OutboxPattern: IIS Express" />
+      <item itemvalue="Compound.Microservices" />
       <item itemvalue="Docker.Docker Image" />
     </list>
     <recent_temporary>
@@ -247,8 +407,17 @@
       <updated>1660848905393</updated>
       <workItem from="1660848909067" duration="394000" />
       <workItem from="1660866004791" duration="41000" />
+      <workItem from="1661036877515" duration="2771000" />
+      <workItem from="1661106808414" duration="20177000" />
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="clear">
+      <created>1661036980411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661036980411</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +439,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize" />
     <MESSAGE value="1. step" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. step" />
+    <MESSAGE value="clear" />
+    <option name="LAST_COMMIT_MESSAGE" value="clear" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
