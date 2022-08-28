@@ -32,20 +32,8 @@
     <projectFile profileName="WebApplication2">WebApplication2/WebApplication2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="1.step completed">
-      <change afterPath="$PROJECT_DIR$/Logging/AddCorrelationIdRequestHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServiceA/Services/BService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServiceB/Service/CService.cs" afterDir="false" />
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="2.step completed">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/Logging.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/Logging.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/Controllers/AController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceA/Controllers/AController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/CorrelationIdMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/CorrelationIdMiddleware.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceA/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/ServiceA.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceA/ServiceA.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/Controllers/BController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceB/Controllers/BController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/CorrelationIdMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceB/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/ServiceB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceB/ServiceB.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -404,7 +392,7 @@
       <workItem from="1660866004791" duration="41000" />
       <workItem from="1661036877515" duration="2771000" />
       <workItem from="1661106808414" duration="20857000" />
-      <workItem from="1661197428624" duration="4667000" />
+      <workItem from="1661197428624" duration="6949000" />
     </task>
     <task id="LOCAL-00004" summary="clear">
       <created>1661036980411</created>
@@ -420,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661128324019</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2.step completed">
+      <created>1661202797699</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661202797699</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +439,8 @@
     <MESSAGE value="1. step" />
     <MESSAGE value="clear" />
     <MESSAGE value="1.step completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.step completed" />
+    <MESSAGE value="2.step completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.step completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
