@@ -32,8 +32,14 @@
     <projectFile profileName="WebApplication2">WebApplication2/WebApplication2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="2.step completed">
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="clear">
+      <change afterPath="$PROJECT_DIR$/WebApplication1/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/ExampleHealthCheck.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/ExampleHealthCheckPublisher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroserviceLessons.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroserviceLessons.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="certificate" />
+        <entry key="$PROJECT_DIR$" value="lessons/logs" />
       </map>
     </option>
   </component>
@@ -58,22 +64,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Azurite",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Compound.Microservices">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication1">
     <configuration name="Microservices" type="CompoundRunConfigurationType">
-      <toRun name="Gateway" type="LaunchSettings" />
-      <toRun name="ServiceA" type="LaunchSettings" />
-      <toRun name="ServiceB" type="LaunchSettings" />
-      <toRun name="ServiceC" type="LaunchSettings" />
       <method v="2" />
     </configuration>
     <configuration name="ExampleApp2.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -316,6 +318,23 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="DockecHealthCheckAppcontainer" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="ornekwebapihealthcheck:latest" />
+          <option name="containerName" value="" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostPort" value="5010" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -351,10 +370,12 @@
       <item itemvalue=".NET Launch Settings Profile.OutboxPattern" />
       <item itemvalue=".NET Launch Settings Profile.OutboxPattern: IIS Express" />
       <item itemvalue="Compound.Microservices" />
+      <item itemvalue="Docker.DockecHealthCheckAppcontainer" />
       <item itemvalue="Docker.Docker Image" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.DockecHealthCheckAppcontainer" />
         <item itemvalue="Docker.Docker Image" />
       </list>
     </recent_temporary>
@@ -393,6 +414,7 @@
       <workItem from="1661036877515" duration="2771000" />
       <workItem from="1661106808414" duration="20857000" />
       <workItem from="1661197428624" duration="6949000" />
+      <workItem from="1661726192644" duration="8349000" />
     </task>
     <task id="LOCAL-00004" summary="clear">
       <created>1661036980411</created>
@@ -415,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661202797699</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="clear">
+      <created>1661726333295</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661726333295</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,10 +466,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize" />
     <MESSAGE value="1. step" />
-    <MESSAGE value="clear" />
     <MESSAGE value="1.step completed" />
     <MESSAGE value="2.step completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.step completed" />
+    <MESSAGE value="clear" />
+    <option name="LAST_COMMIT_MESSAGE" value="clear" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -463,6 +492,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebApplication1/ExampleHealthCheck.cs</url>
+          <line>8</line>
+          <properties documentPath="$PROJECT_DIR$/WebApplication1/ExampleHealthCheck.cs" initialLine="8" containingFunctionPresentation="method 'CheckHealthAsync'">
+            <startOffsets>
+              <option value="286" />
+            </startOffsets>
+            <endOffsets>
+              <option value="308" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
