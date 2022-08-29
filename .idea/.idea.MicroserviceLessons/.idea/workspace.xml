@@ -35,29 +35,7 @@
     <projectFile profileName="WorkerServiceWithSubscriber">WorkerServiceWithSubscriber/WorkerServiceWithSubscriber.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="health check completed">
-      <change afterPath="$PROJECT_DIR$/SharedLibrary/BaseEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharedLibrary/OrderCreatedEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerServiceWithSubscriber/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerServiceWithSubscriber/Consumers/ProductCreatedEvetConsumer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerServiceWithSubscriber/Models/AppDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerServiceWithSubscriber/Models/QueueIdempotentInbox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroserviceLessons.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroserviceLessons.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/ExampleHealthCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/ExampleHealthCheckPublisher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/readme.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="idempotent completed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -483,7 +461,7 @@
       <workItem from="1661106808414" duration="20857000" />
       <workItem from="1661197428624" duration="6949000" />
       <workItem from="1661726192644" duration="8674000" />
-      <workItem from="1661765952581" duration="8892000" />
+      <workItem from="1661765952581" duration="9262000" />
     </task>
     <task id="LOCAL-00004" summary="clear">
       <created>1661036980411</created>
@@ -527,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661735372052</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="idempotent completed">
+      <created>1661778325886</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661778325886</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +538,8 @@
     <MESSAGE value="2.step completed" />
     <MESSAGE value="clear" />
     <MESSAGE value="health check completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="health check completed" />
+    <MESSAGE value="idempotent completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="idempotent completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
