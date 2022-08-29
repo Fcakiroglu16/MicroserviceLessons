@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-WorkerServiceWithSubscriber-7E62D97E-83BC-4E36-B610-049C3F02D230</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1"/>
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.6"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.8"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\SharedLibrary\SharedLibrary.csproj"/>
+    </ItemGroup>
+</Project>

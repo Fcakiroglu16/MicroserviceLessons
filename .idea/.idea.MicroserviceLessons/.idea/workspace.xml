@@ -30,16 +30,33 @@
     <projectFile profileName="WebApplication1">WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="IIS Express">WebApplication2/WebApplication2.csproj</projectFile>
     <projectFile profileName="WebApplication2">WebApplication2/WebApplication2.csproj</projectFile>
+    <projectFile profileName="IIS Express">WebApplicationWithPublisher/WebApplicationWithPublisher.csproj</projectFile>
+    <projectFile profileName="WebApplicationWithPublisher">WebApplicationWithPublisher/WebApplicationWithPublisher.csproj</projectFile>
+    <projectFile profileName="WorkerServiceWithSubscriber">WorkerServiceWithSubscriber/WorkerServiceWithSubscriber.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="clear">
-      <change afterPath="$PROJECT_DIR$/WebApplication1/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/ExampleHealthCheck.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/ExampleHealthCheckPublisher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/readme.txt" afterDir="false" />
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="health check completed">
+      <change afterPath="$PROJECT_DIR$/SharedLibrary/BaseEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SharedLibrary/OrderCreatedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WorkerServiceWithSubscriber/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WorkerServiceWithSubscriber/Consumers/ProductCreatedEvetConsumer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WorkerServiceWithSubscriber/Models/AppDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WorkerServiceWithSubscriber/Models/QueueIdempotentInbox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MicroserviceLessons.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroserviceLessons.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/ExampleHealthCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/ExampleHealthCheckPublisher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/readme.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +66,12 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lessons/logs" />
+        <entry key="$PROJECT_DIR$" value="lessons/healthcheck" />
       </map>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WorkerServiceWithSubscriber/Consumers/ProductCreatedEvetConsumer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -64,17 +84,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Azurite",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Azurite&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication1">
+}</component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplicationWithPublisher">
     <configuration name="Microservices" type="CompoundRunConfigurationType">
       <method v="2" />
     </configuration>
@@ -318,6 +338,51 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="WebApplicationWithPublisher" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApplicationWithPublisher/WebApplicationWithPublisher.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="WebApplicationWithPublisher" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="WebApplicationWithPublisher: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApplicationWithPublisher/WebApplicationWithPublisher.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="WorkerServiceWithSubscriber" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WorkerServiceWithSubscriber/WorkerServiceWithSubscriber.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="WorkerServiceWithSubscriber" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="DockecHealthCheckAppcontainer" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -353,6 +418,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue=".NET Launch Settings Profile.WebApplicationWithPublisher" />
+      <item itemvalue=".NET Launch Settings Profile.WebApplicationWithPublisher: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.WorkerServiceWithSubscriber" />
       <item itemvalue=".NET Launch Settings Profile.Gateway" />
       <item itemvalue=".NET Launch Settings Profile.Gateway: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.ServiceA" />
@@ -414,7 +482,8 @@
       <workItem from="1661036877515" duration="2771000" />
       <workItem from="1661106808414" duration="20857000" />
       <workItem from="1661197428624" duration="6949000" />
-      <workItem from="1661726192644" duration="8349000" />
+      <workItem from="1661726192644" duration="8674000" />
+      <workItem from="1661765952581" duration="8892000" />
     </task>
     <task id="LOCAL-00004" summary="clear">
       <created>1661036980411</created>
@@ -444,7 +513,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661726333295</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="health check completed">
+      <created>1661735261443</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661735261443</updated>
+    </task>
+    <task id="LOCAL-00009" summary="health check completed">
+      <created>1661735372052</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661735372052</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +552,8 @@
     <MESSAGE value="1.step completed" />
     <MESSAGE value="2.step completed" />
     <MESSAGE value="clear" />
-    <option name="LAST_COMMIT_MESSAGE" value="clear" />
+    <MESSAGE value="health check completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="health check completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -483,14 +567,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ServiceA/Services/BService.cs</url>
           <line>17</line>
-          <properties documentPath="$PROJECT_DIR$/ServiceA/Services/BService.cs" initialLine="17" containingFunctionPresentation="method 'Get'">
-            <startOffsets>
-              <option value="422" />
-            </startOffsets>
-            <endOffsets>
-              <option value="455" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/ServiceA/Services/BService.cs" initialLine="17" containingFunctionPresentation="method 'Get'" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
