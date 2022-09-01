@@ -1,8 +1,5 @@
-using Serilog;
-using ServiceC;
-
 var builder = WebApplication.CreateBuilder(args);
-builder.Host.UseSerilog(Logging.Logging.ConfigureLogger);
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -12,7 +9,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.UseMiddleware<CorrelationIdMiddleware>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
