@@ -1,15 +1,5 @@
 version: '3.8'
 services:
-  ServiceA.api:
-    image: service-a-image
-    build:
-      context: .
-      dockerfile: Microservice1.API/Dockerfile
-  ServiceB.api:
-    image: service-b-image
-    build:
-      context: .
-      dockerfile: Microservice2.API/Dockerfile
   Services-Discovery :
      image : steeltoeoss/eureka-server
      expose:
