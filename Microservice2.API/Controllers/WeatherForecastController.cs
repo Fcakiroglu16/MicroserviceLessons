@@ -29,4 +29,9 @@ public class WeatherForecastController : ControllerBase
             })
             .ToArray();
     }
+    [HttpPost]
+    public IActionResult Post()
+    {
+        return Ok("Microservice 2 is working");
+    }
 }

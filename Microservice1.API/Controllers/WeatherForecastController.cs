@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Steeltoe.Common.Discovery;
+using Steeltoe.Discovery;
 
 namespace Microservice1.API.Controllers;
 
@@ -12,10 +14,11 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
-
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    readonly DiscoveryHttpClientHandler _discoveryHttpClientHandler;
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, IDiscoveryClient discoveryClient)
     {
         _logger = logger;
+        _discoveryHttpClientHandler = new(discoveryClient);
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
@@ -29,4 +32,30 @@ public class WeatherForecastController : ControllerBase
             })
             .ToArray();
     }
+
+    [HttpPost]
+    public async  Task<IActionResult> Post()
+    {
+
+        using HttpClient httpClient = new(_discoveryHttpClientHandler, false);
+        var response= await httpClient.PostAsync("http://microserviceB/WeatherForecast", null);
+
+        var content = await response.Content.ReadAsStringAsync();
+        return Ok(new { Result= "Request has made to Microservice 2", Response= content });
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> Put()
+    {
+
+        using HttpClient httpClient = new(_discoveryHttpClientHandler, false);
+        var response = await httpClient.GetAsync("http://microserviceB/WeatherForecast");
+
+        var content = await response.Content.ReadAsStringAsync();
+        return Ok(new { Result = "Request has made to Microservice 2", Response = content });
+    }
+
+
+
+
 }
