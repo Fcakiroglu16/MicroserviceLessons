@@ -42,54 +42,16 @@
     <projectFile profileName="WorkerServiceWithSubscriber">WorkerServiceWithSubscriber/WorkerServiceWithSubscriber.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="1.step completed">
-      <change afterPath="$PROJECT_DIR$/Microservice1.API/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Microservice2.API/Dockerfile" afterDir="false" />
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/Microservice1.API/Models/AppDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservice1.API/Models/Product.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservice1.API/Models/ResilientTransaction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1.API/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/CorrelationIdMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/Gateway.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/configuration.development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/configuration.production.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/AddCorrelationIdRequestHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/CorrelationIdMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/Logging.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/Logging.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroserviceLessons.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroserviceLessons.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2.API/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/Controllers/AController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/ServiceA.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/Services/BService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/Controllers/BController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/Service/CService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/ServiceB.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceC/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceC/Controllers/CController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceC/CorrelationIdMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceC/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceC/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceC/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceC/ServiceC.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceC/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceC/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.override.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.override.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice1.API/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice1.API/Microservice1.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1.API/Microservice1.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice1.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice1.API/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice1.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1.API/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +61,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lessons/logs" />
+        <entry key="$PROJECT_DIR$" value="lessons/service-discovery-pattern" />
       </map>
     </option>
   </component>
@@ -114,16 +76,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pathVariables",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Microservice2.API">
     <configuration name="Microservices" type="CompoundRunConfigurationType">
       <method v="2" />
@@ -223,6 +185,7 @@
       <workItem from="1661036877515" duration="2771000" />
       <workItem from="1661106808414" duration="20857000" />
       <workItem from="1661197428624" duration="4667000" />
+      <workItem from="1662313270215" duration="4183000" />
     </task>
     <task id="LOCAL-00004" summary="clear">
       <created>1661036980411</created>
@@ -238,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661128324019</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init">
+      <created>1662069482072</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662069482072</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +232,8 @@
     <MESSAGE value="1. step" />
     <MESSAGE value="clear" />
     <MESSAGE value="1.step completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.step completed" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -276,14 +247,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ServiceA/Services/BService.cs</url>
           <line>17</line>
-          <properties documentPath="$PROJECT_DIR$/ServiceA/Services/BService.cs" initialLine="17" containingFunctionPresentation="method 'Get'">
-            <startOffsets>
-              <option value="422" />
-            </startOffsets>
-            <endOffsets>
-              <option value="455" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/ServiceA/Services/BService.cs" initialLine="17" containingFunctionPresentation="method 'Get'" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>

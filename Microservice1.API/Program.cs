@@ -1,12 +1,15 @@
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+using Microservice1.API;
+using Microsoft.EntityFrameworkCore;
 using Steeltoe.Discovery.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 // Add services to the container.
-
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlServer("your connection string",
+        optionBuilder => { optionBuilder.EnableRetryOnFailure(5, TimeSpan.FromSeconds(20), null); });
+});
 builder.Services.AddControllers();
 
 builder.Services.AddHealthChecks();
