@@ -1,4 +1,4 @@
-namespace Microservice2.API;
+namespace Microservice2;
 
 public class WeatherForecast
 {

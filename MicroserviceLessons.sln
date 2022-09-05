@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "servies", "servies", "{5A3A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice1.API", "Microservice1.API\Microservice1.API.csproj", "{4FE27042-974F-4AEA-B1EE-6D5628E3131F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice2.API", "Microservice2.API\Microservice2.API.csproj", "{AEF823B9-464C-4BAA-A34F-F61F7F25FB11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice2.API", "Microservice2.API\Microservice2.API.csproj", "{1F4817EE-7FBA-422A-9C07-099FC57E3AE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,10 @@ Global
 		{4FE27042-974F-4AEA-B1EE-6D5628E3131F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FE27042-974F-4AEA-B1EE-6D5628E3131F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FE27042-974F-4AEA-B1EE-6D5628E3131F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEF823B9-464C-4BAA-A34F-F61F7F25FB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEF823B9-464C-4BAA-A34F-F61F7F25FB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEF823B9-464C-4BAA-A34F-F61F7F25FB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEF823B9-464C-4BAA-A34F-F61F7F25FB11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F4817EE-7FBA-422A-9C07-099FC57E3AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F4817EE-7FBA-422A-9C07-099FC57E3AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F4817EE-7FBA-422A-9C07-099FC57E3AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F4817EE-7FBA-422A-9C07-099FC57E3AE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +38,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4FE27042-974F-4AEA-B1EE-6D5628E3131F} = {5A3A130A-37E7-419D-ACA9-B070CEB67DD7}
-		{AEF823B9-464C-4BAA-A34F-F61F7F25FB11} = {5A3A130A-37E7-419D-ACA9-B070CEB67DD7}
+		{1F4817EE-7FBA-422A-9C07-099FC57E3AE6} = {5A3A130A-37E7-419D-ACA9-B070CEB67DD7}
 	EndGlobalSection
 EndGlobal

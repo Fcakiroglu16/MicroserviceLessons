@@ -1,10 +1,27 @@
 version: '3.8'
 services:
-  Services-Discovery :
-     image : steeltoeoss/eureka-server
-     expose:
-     - 8761
-     ports:
-     - 8761:8761
-     
+  microservice-a:
+    image: service-a-image
+    build:
+      context: .
+      dockerfile: Microservice1.API/Dockerfile
+    ports:
+      - "8002:80"
+      - "8003:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+  rabbitmq:
+    image: heidiks/rabbitmq-delayed-message-exchange:latest
+    container_name: 'rabbitmq-with-redelivery'
+    expose:
+      - 15672
+      - 5672
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
+
+
+    
 

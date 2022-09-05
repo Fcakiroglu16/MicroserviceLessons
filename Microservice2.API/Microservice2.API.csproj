@@ -4,11 +4,10 @@
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <RootNamespace>Microservice2</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Steeltoe.Discovery.Eureka" Version="3.2.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
 

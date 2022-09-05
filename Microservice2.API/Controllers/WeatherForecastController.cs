@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Microservice2.API.Controllers;
+namespace Microservice2.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -21,6 +21,7 @@ public class WeatherForecastController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
+        Thread.Sleep(20000);
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
@@ -28,10 +29,5 @@ public class WeatherForecastController : ControllerBase
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
-    }
-    [HttpPost]
-    public IActionResult Post()
-    {
-        return Ok("Microservice 2 is working");
     }
 }

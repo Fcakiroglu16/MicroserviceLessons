@@ -13,7 +13,7 @@ public class ResilientTransaction
 
     public static ResilientTransaction Create(DbContext context)
     {
-        return new(context);
+        return new ResilientTransaction(context);
     }
 
     public async Task Execute(Func<Task> action)
