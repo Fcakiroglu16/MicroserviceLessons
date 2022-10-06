@@ -48,8 +48,14 @@
     <projectFile profileName="WorkerServiceWithSubscriber">WorkerServiceWithSubscriber/WorkerServiceWithSubscriber.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="1.step completed">
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="1.step">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +65,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lessons/distributed-lock" />
+        <entry key="$PROJECT_DIR$" value="lessons/distributed-lock-problem" />
       </map>
     </option>
   </component>
@@ -67,7 +73,6 @@
     <setting file="file://$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WorkerService1/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WorkerService2/appsettings.Development.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f113a06c07274ec4ad8e1bf4525beaf0200ba0/35/dfc2f63d/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -86,22 +91,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "HotReloadSettingsPage",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WorkerService2">
+}]]></component>
+  <component name="RunManager" selected=".NET Project.EventPublishToMessageBroker.App">
     <configuration name="Microservices" type="CompoundRunConfigurationType">
       <method v="2" />
     </configuration>
