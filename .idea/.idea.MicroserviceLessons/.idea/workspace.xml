@@ -48,8 +48,11 @@
     <projectFile profileName="WorkerServiceWithSubscriber">WorkerServiceWithSubscriber/WorkerServiceWithSubscriber.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="1.step completed">
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="2.step">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +104,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WorkerService2">
+  <component name="RunManager" selected=".NET Project.EventPublishToMessageBroker.App">
     <configuration name="Microservices" type="CompoundRunConfigurationType">
       <method v="2" />
     </configuration>
@@ -252,7 +255,7 @@
       <workItem from="1661106808414" duration="20857000" />
       <workItem from="1661197428624" duration="4667000" />
       <workItem from="1665053469696" duration="13828000" />
-      <workItem from="1665071412664" duration="314000" />
+      <workItem from="1665071412664" duration="1582000" />
     </task>
     <task id="LOCAL-00004" summary="clear">
       <created>1661036980411</created>
@@ -268,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661128324019</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2.step">
+      <created>1665071753606</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665071753606</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +302,8 @@
     <MESSAGE value="1. step" />
     <MESSAGE value="clear" />
     <MESSAGE value="1.step completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.step completed" />
+    <MESSAGE value="2.step" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.step" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

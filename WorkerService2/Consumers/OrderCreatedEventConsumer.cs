@@ -24,23 +24,14 @@ public class OrderCreatedEventConsumer : IConsumer<OrderCreatedEvent>
         var stockToUpdate =await  _dbContext.Stocks.FindAsync(context.Message.OrderId);
 
         if (stockToUpdate == null) return;
-
-        try
-        {
-            stockToUpdate.Count = - context.Message.Count;
+        stockToUpdate.Count = - context.Message.Count;
            await  _dbContext.SaveChangesAsync();
-            
-            stockUpdatedCount++;
+           stockUpdatedCount++;
             _logger.LogError("StockUpdatedCount :{Count}", stockUpdatedCount);
             _logger.LogError("Stock has decreased :{Count}, Order Sequence : {sequence}", stockToUpdate.Count,context
                 .Message.OrderSequence);
-        }
-        catch (DbUpdateConcurrencyException e)
-        {
-            
-            stockNotUpdatedCount++;
-            _logger.LogCritical("stockNotUpdatedCount :{Count}", stockNotUpdatedCount);
-        }  
+        
+   
        System.Threading.Thread.Sleep(500);
     }
 }
