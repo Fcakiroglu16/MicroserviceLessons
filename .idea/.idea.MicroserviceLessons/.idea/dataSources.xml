@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="OutBoxPatternDb@localhost" uuid="e98526f2-9291-49cb-8c25-ac722eccae7e">
+    <data-source source="LOCAL" name="DistributedLockOptimisticDb@localhost" uuid="32d7fd5b-6693-44f6-8573-88c50745e53c">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/OutBoxPatternDb</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/DistributedLockOptimisticDb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
