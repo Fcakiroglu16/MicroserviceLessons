@@ -48,14 +48,19 @@
     <projectFile profileName="WorkerServiceWithSubscriber">WorkerServiceWithSubscriber/WorkerServiceWithSubscriber.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="1.step">
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="When use PostgreSQL,the problem  raises">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Models/AppDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/WorkerService1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/WorkerService1.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Models/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/WorkerService2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/WorkerService2.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +107,8 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
+      "sqlserver",
+      "azure",
       "postgresql"
     ]
   }
@@ -273,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661128324019</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="When use PostgreSQL,the problem  raises">
+      <created>1665093543565</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665093543565</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +311,8 @@
     <MESSAGE value="1. step" />
     <MESSAGE value="clear" />
     <MESSAGE value="1.step completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.step completed" />
+    <MESSAGE value="When use PostgreSQL,the problem  raises" />
+    <option name="LAST_COMMIT_MESSAGE" value="When use PostgreSQL,the problem  raises" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

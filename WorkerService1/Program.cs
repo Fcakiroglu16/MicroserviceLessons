@@ -29,7 +29,6 @@ var host = Host.CreateDefaultBuilder(args)
                 {
                     e.ConcurrentMessageLimit = 1;
                     e.ConfigureConsumer<OrderCreatedEventConsumer>(context);
-                  
                 });
             });
         });
@@ -41,7 +40,6 @@ using (var scope = host.Services.CreateScope())
 
     dbContext.Database.EnsureDeleted();
     dbContext.Database.EnsureCreated();
-
 
     dbContext.Stocks.Add(new Stock { Id = 1, Name = "Pen 1", Count = 50 });
     dbContext.SaveChanges();

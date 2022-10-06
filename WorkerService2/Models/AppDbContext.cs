@@ -13,7 +13,7 @@ public class AppDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Stock>().HasData(new Stock { Id = 1, Name = "Pen 1", Count = 100 });
-
+        modelBuilder.Entity<Stock>().UseXminAsConcurrencyToken();
         base.OnModelCreating(modelBuilder);
     }
 }

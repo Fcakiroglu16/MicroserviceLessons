@@ -12,7 +12,6 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-     
         modelBuilder.Entity<Stock>().UseXminAsConcurrencyToken();
         base.OnModelCreating(modelBuilder);
     }
