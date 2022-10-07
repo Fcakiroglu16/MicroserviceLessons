@@ -9,6 +9,6 @@ public class OrderCreatedEvent
 
     public override string ToString()
     {
-        return $"{OrderId}-{Count}";
+        return $"Order Id :{OrderId}, Order Count :{Count}";
     }
 }

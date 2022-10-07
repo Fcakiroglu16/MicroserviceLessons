@@ -11,6 +11,7 @@ public class Worker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        _logger.LogInformation("Messages is listening");
         // while (!stoppingToken.IsCancellationRequested)
         // {
         //     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);

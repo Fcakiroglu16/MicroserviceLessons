@@ -3,9 +3,7 @@
 using MassTransit;
 using SharedEvents;
 
-Console.WriteLine("Mesajlar Gönderiliyor");
-
-Console.WriteLine("Messages publishing");
+Console.WriteLine("Messages is publishing");
 var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
 {
     cfg.Host("localhost", "/", h =>

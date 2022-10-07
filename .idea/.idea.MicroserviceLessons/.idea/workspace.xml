@@ -48,19 +48,26 @@
     <projectFile profileName="WorkerServiceWithSubscriber">WorkerServiceWithSubscriber/WorkerServiceWithSubscriber.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="When use PostgreSQL,the problem  raises">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" beforeDir="false" />
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="Bug fixed, optimistic solution works successfully">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SharedEvents/OrderCreatedEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SharedEvents/OrderCreatedEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/20221006194822_initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/20221006194822_initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Models/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Models/Stock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Models/Stock.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Worker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/WorkerService1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/WorkerService1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService2/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Models/AppDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Worker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService2/WorkerService2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/WorkerService2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +77,17 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lessons/distributed-lock-problem" />
+        <entry key="$PROJECT_DIR$" value="lessons/distributed-lock-optimistic-solution" />
       </map>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/fatihcakiroglu/Documents/Lessons/MicroserviceLessons/WorkerService1/Models/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WorkerService1/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WorkerService2/appsettings.Development.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WorkerService2/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e37c90da6e6f4832bfbefd53803015a6c2400/c4/a1eb90cb/ConnectionMultiplexer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f113a06c07274ec4ad8e1bf4525beaf0200ba0/35/dfc2f63d/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -113,7 +122,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.EventPublishToMessageBroker.App">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WorkerService1">
     <configuration name="Microservices" type="CompoundRunConfigurationType">
       <method v="2" />
     </configuration>
@@ -287,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665093543565</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Bug fixed, optimistic solution works successfully">
+      <created>1665095878700</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665095878700</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +328,8 @@
     <MESSAGE value="clear" />
     <MESSAGE value="1.step completed" />
     <MESSAGE value="When use PostgreSQL,the problem  raises" />
-    <option name="LAST_COMMIT_MESSAGE" value="When use PostgreSQL,the problem  raises" />
+    <MESSAGE value="Bug fixed, optimistic solution works successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixed, optimistic solution works successfully" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
