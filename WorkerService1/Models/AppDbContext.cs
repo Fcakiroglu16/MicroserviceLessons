@@ -10,10 +10,5 @@ public class AppDbContext : DbContext
 
     public DbSet<Stock> Stocks { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-     
-        modelBuilder.Entity<Stock>().UseXminAsConcurrencyToken();
-        base.OnModelCreating(modelBuilder);
-    }
+   
 }

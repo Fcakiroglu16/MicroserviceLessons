@@ -16,7 +16,7 @@ var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
 
 foreach (var i in Enumerable.Range(1, 100).ToList())
 {
-    var orderCreatedEvent = new OrderCreatedEvent { OrderId = 1, Count = 1  ,OrderSequence = i};
+    var orderCreatedEvent = new OrderCreatedEvent { OrderId = 1, Count = 1, OrderSequence = i };
 
     await busControl.Publish(orderCreatedEvent);
 

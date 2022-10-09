@@ -51,8 +51,30 @@
     <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="2.step">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/OutBoxPatternDb.8XyTiw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/OutBoxPatternDb.8XyTiw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/OutBoxPatternDb.8XyTiw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/OutBoxPatternDb.8XyTiw/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SharedEvents/OrderCreatedEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SharedEvents/OrderCreatedEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/20221006160019_initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/20221006160019_initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Models/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/WorkerService1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/WorkerService1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Worker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/WorkerService2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/WorkerService2.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +126,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.EventPublishToMessageBroker.App">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WorkerService2">
     <configuration name="Microservices" type="CompoundRunConfigurationType">
       <method v="2" />
     </configuration>

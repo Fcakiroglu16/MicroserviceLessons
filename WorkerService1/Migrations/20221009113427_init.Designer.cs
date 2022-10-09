@@ -11,8 +11,8 @@ using WorkerService1.Models;
 namespace WorkerService1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221006160019_initial")]
-    partial class initial
+    [Migration("20221009113427_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -37,11 +37,6 @@ namespace WorkerService1.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<uint>("xmin")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("xid");
 
                     b.HasKey("Id");
 

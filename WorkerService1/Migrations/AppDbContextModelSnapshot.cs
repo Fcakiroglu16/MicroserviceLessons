@@ -36,11 +36,6 @@ namespace WorkerService1.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<uint>("xmin")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("xid");
-
                     b.HasKey("Id");
 
                     b.ToTable("Stocks");

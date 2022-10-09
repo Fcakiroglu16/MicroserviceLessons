@@ -5,7 +5,7 @@ using WorkerService2.Consumers;
 using WorkerService2.Models;
 
 var host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((contextHost,services) =>
+    .ConfigureServices((contextHost, services) =>
     {
         services.AddDbContext<AppDbContext>(options =>
         {
