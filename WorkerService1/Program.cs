@@ -1,5 +1,8 @@
+using System.Net;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
+using RedLockNet.SERedis;
+using RedLockNet.SERedis.Configuration;
 using WorkerService1;
 using WorkerService1.Consumers;
 using WorkerService1.Models;
@@ -13,10 +16,17 @@ var host = Host.CreateDefaultBuilder(args)
         });
 
         services.AddHostedService<Worker>();
-
+        services.AddSingleton<RedLockFactory>(sp =>
+        {
+            var endPoints = new List<RedLockEndPoint>
+            {
+                new DnsEndPoint("localhost", 6379)
+            };
+            return RedLockFactory.Create(endPoints);
+        });
         services.AddMassTransit(x =>
         {
-            x.AddConsumer<OrderCreatedEventConsumer>();
+            x.AddConsumer<UserNameChangedEventConsumer>();
             x.UsingRabbitMq((context, cfg) =>
             {
                 cfg.Host("localhost", "/", h =>
@@ -25,10 +35,10 @@ var host = Host.CreateDefaultBuilder(args)
                     h.Password("guest");
                 });
 
-                cfg.ReceiveEndpoint("order-create-event-queue", e =>
+                cfg.ReceiveEndpoint("username-changed-event-queue", e =>
                 {
                     e.ConcurrentMessageLimit = 1;
-                    e.ConfigureConsumer<OrderCreatedEventConsumer>(context);
+                    e.ConfigureConsumer<UserNameChangedEventConsumer>(context);
                 });
             });
         });
@@ -41,7 +51,8 @@ using (var scope = host.Services.CreateScope())
     dbContext.Database.EnsureDeleted();
     dbContext.Database.EnsureCreated();
 
-    dbContext.Stocks.Add(new Stock { Id = 1, Name = "Pen 1", Count = 100 });
+    dbContext.Users.Add(new User { UserName = "jone", Email = "jon@outlook.com", Age = 20 ,CreatedDateTime = DateTime
+    .Now.ToUniversalTime()});
     dbContext.SaveChanges();
 }
 

@@ -48,33 +48,31 @@
     <projectFile profileName="WorkerServiceWithSubscriber">WorkerServiceWithSubscriber/WorkerServiceWithSubscriber.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="2.step">
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="problem created">
+      <change afterPath="$PROJECT_DIR$/SharedEvents/UserNameChangedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WorkerService1/Consumers/UserNameChangedEventConsumer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WorkerService1/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WorkerService2/Consumers/UserNameChangedEventConsumer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WorkerService2/Models/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/OutBoxPatternDb.8XyTiw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/OutBoxPatternDb.8XyTiw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/OutBoxPatternDb.8XyTiw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/OutBoxPatternDb.8XyTiw/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources/e98526f2-9291-49cb-8c25-ac722eccae7e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SharedEvents/OrderCreatedEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SharedEvents/OrderCreatedEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/20221006160019_initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/20221006160019_initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SharedEvents/OrderCreatedEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/20221009113427_init.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/20221009113427_init.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Models/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService1/Models/Stock.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/WorkerService1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/WorkerService1.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService1/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Models/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/Models/Stock.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkerService2/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/Worker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService2/WorkerService2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/WorkerService2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService2/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService2/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,15 +82,15 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lessons/distributed-lock" />
+        <entry key="$PROJECT_DIR$" value="lessons/message-versioning-problem" />
       </map>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/EventPublishToMessageBroker.App/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WorkerService1/Consumers/OrderCreatedEventConsumer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WorkerService1/Consumers/UserNameChangedEventConsumer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WorkerService1/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WorkerService2/Consumers/OrderCreatedEventConsumer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WorkerService2/Consumers/UserNameChangedEventConsumer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WorkerService2/appsettings.Development.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f113a06c07274ec4ad8e1bf4525beaf0200ba0/35/dfc2f63d/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -111,21 +109,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "HotReloadSettingsPage",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WorkerService2">
     <configuration name="Microservices" type="CompoundRunConfigurationType">
       <method v="2" />
@@ -300,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665071753606</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="problem created">
+      <created>1665315584940</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665315584940</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +330,8 @@
     <MESSAGE value="clear" />
     <MESSAGE value="1.step completed" />
     <MESSAGE value="2.step" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.step" />
+    <MESSAGE value="problem created" />
+    <option name="LAST_COMMIT_MESSAGE" value="problem created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,12 +8,5 @@ public class AppDbContext : DbContext
     {
     }
 
-    public DbSet<Stock> Stocks { get; set; }
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<Stock>().HasData(new Stock { Id = 1, Name = "Pen 1", Count = 100 });
-
-        base.OnModelCreating(modelBuilder);
-    }
+    public DbSet<User> Users { get; set; }
 }

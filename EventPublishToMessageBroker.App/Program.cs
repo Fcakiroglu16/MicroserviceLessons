@@ -14,11 +14,14 @@ var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
     });
 });
 
-foreach (var i in Enumerable.Range(1, 100).ToList())
+foreach (var i in Enumerable.Range(1, 21).ToList())
 {
-    var orderCreatedEvent = new OrderCreatedEvent { OrderId = 1, Count = 1, OrderSequence = i };
+    var userName = $"jone-{i}";
 
-    await busControl.Publish(orderCreatedEvent);
+// Epoch time can use for this situation
+    var userNameChangedEvent = new UserNameChangedEvent(1, userName,DateTime.Now.ToUniversalTime());
 
-    Console.WriteLine($"Mesaj gönderildi: {orderCreatedEvent}");
+    await busControl.Publish(userNameChangedEvent);
+
+    Console.WriteLine($"Mesaj gönderildi: {userNameChangedEvent}");
 }
