@@ -15,18 +15,13 @@ public class AController : ControllerBase
         _bService = bService;
     }
 
-    [HttpGet]
-    public async Task<IActionResult> Get()
+    [HttpPost]
+    public async Task<IActionResult> Post()
     {
         _logger.LogInformation("Get(A Service)  method  worked");
-        await _bService.Get();
+        await _bService.Post();
         return Ok();
     }
 
-    [HttpPost]
-    public IActionResult Post()
-    {
-        _logger.LogInformation("Get(A Service)POST  method  worked");
-        return Ok("post");
-    }
+ 
 }

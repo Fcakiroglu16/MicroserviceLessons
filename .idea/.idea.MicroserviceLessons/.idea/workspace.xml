@@ -33,19 +33,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="1.step completed">
-      <change afterPath="$PROJECT_DIR$/Logging/AddCorrelationIdRequestHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServiceA/Services/BService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServiceB/Service/CService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/Logging.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/Logging.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/CorrelationIdMiddleware.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/Gateway.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/configuration.development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/configuration.production.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/AddCorrelationIdRequestHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/CorrelationIdMiddleware.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/Logging.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/Logging.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroserviceLessons.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroserviceLessons.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceA/Controllers/AController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceA/Controllers/AController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceA/CorrelationIdMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/CorrelationIdMiddleware.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceA/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceA/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceA/ServiceA.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceA/ServiceA.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceA/Services/BService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceA/Services/BService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceA/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceA/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceB/Controllers/BController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceB/Controllers/BController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceB/CorrelationIdMiddleware.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceB/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceB/Service/CService.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceB/ServiceB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceB/ServiceB.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceC/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceC/Controllers/CController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceC/CorrelationIdMiddleware.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceC/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceC/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceC/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceC/ServiceC.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceC/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceC/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dcproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.override.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +80,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="certificate" />
+        <entry key="$PROJECT_DIR$" value="lessons/logs" />
       </map>
     </option>
   </component>
@@ -70,22 +95,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "HotReloadSettingsPage",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Compound.Microservices">
     <configuration name="Microservices" type="CompoundRunConfigurationType">
-      <toRun name="Gateway" type="LaunchSettings" />
-      <toRun name="ServiceA" type="LaunchSettings" />
-      <toRun name="ServiceB" type="LaunchSettings" />
-      <toRun name="ServiceC" type="LaunchSettings" />
+      <toRun name="ServiceA: IIS Express" type="LaunchSettings" />
+      <toRun name="ServiceB: IIS Express" type="LaunchSettings" />
       <method v="2" />
     </configuration>
     <configuration name="ExampleApp2.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -226,7 +249,7 @@
     <configuration name="ServiceA: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ServiceA/ServiceA.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="LAUNCH_PROFILE_NAME" value="ServiceA" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -256,7 +279,7 @@
     <configuration name="ServiceB: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ServiceB/ServiceB.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="LAUNCH_PROFILE_NAME" value="ServiceB" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -454,19 +477,6 @@
           <line>30</line>
           <properties documentPath="$PROJECT_DIR$/WebApplication1/Controllers/HomeController.cs" initialLine="30" containingFunctionPresentation="method 'Privacy'" />
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ServiceA/Services/BService.cs</url>
-          <line>17</line>
-          <properties documentPath="$PROJECT_DIR$/ServiceA/Services/BService.cs" initialLine="17" containingFunctionPresentation="method 'Get'">
-            <startOffsets>
-              <option value="422" />
-            </startOffsets>
-            <endOffsets>
-              <option value="455" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -12,9 +12,12 @@ public class BService
         _logger = logger;
     }
 
-    public async Task Get()
+    public async Task Post()
     {
-        var response = await _httpClient.GetAsync("b");
+        var response = await _httpClient.PostAsJsonAsync("b", new { Name = "Pen", Price = 200 });
+
+
+        var responseBody = response.Content.ReadAsStringAsync();
         if (response.IsSuccessStatusCode) _logger.LogInformation("ServiceB was made request successfully");
         
         
