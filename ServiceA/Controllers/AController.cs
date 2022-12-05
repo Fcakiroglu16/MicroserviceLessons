@@ -18,9 +18,14 @@ public class AController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Post()
     {
-        _logger.LogInformation("Get(A Service)  method  worked");
-        await _bService.Post();
-        return Ok();
+        using (_logger.BeginScope("Scope = UserIdScope :{UserIdScope} RequestIdScope={RequestId}","1234",HttpContext.TraceIdentifier))
+        {
+            _logger.LogInformation("Get(A Service)  method  working");
+            await _bService.Post();
+            _logger.LogInformation("Get(A Service)  method  worked");
+            return Ok();
+        }
+    
     }
 
  

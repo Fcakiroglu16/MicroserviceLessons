@@ -12,14 +12,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddHttpLogging(logging =>
-{
-    logging.LoggingFields = HttpLoggingFields.All;
-    logging.RequestBodyLogLimit = 4096;
-    logging.ResponseBodyLogLimit = 4096;
-
-
-});
+// builder.Services.AddHttpLogging(logging =>
+// {
+//     logging.LoggingFields = HttpLoggingFields.None;
+//     logging.RequestBodyLogLimit = 4096;
+//     logging.ResponseBodyLogLimit = 4096;
+//
+//
+// });
 builder.Services.AddHttpClient<BService>(x =>
 {
     x.BaseAddress = new Uri("http://localhost:5201/api/");
@@ -36,7 +36,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // app.UseHttpsRedirection();
-app.UseHttpLogging();
+// app.UseHttpLogging();
 app.UseAuthorization();
 
 app.MapControllers();
