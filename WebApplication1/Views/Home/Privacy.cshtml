@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Authentication
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+
+<ul>
+    
+    
+    @foreach (var item in User.Claims)
+    {
+        <li>@item.Type  :<strong>@item.Value</strong> </li>
+    }
+
+</ul>
+
+
+<ul>
+
+    @foreach (var item in (await Context.AuthenticateAsync()).Properties.Items)
+    {
+
+        <li>@item.Key @item.Value</li>
+
+    }
+</ul>
