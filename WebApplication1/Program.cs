@@ -10,10 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 // builder.Services.AddHealthChecks()
 //   .AddCheck<ExampleHealthCheck>("Exaple");
 
-
+//DbContext HealthChekc
+//builder.Services.AddHealthChecks().AddDbContextCheck<AppDbContext>();
 
 //SQL Server HealthCheck
-// builder.Services.AddHealthChecks()
+// ilder.Services.AddHealthChecks()bu
 //   .AddSqlServer(
 //     builder.Configuration.GetConnectionString("DefaultConnection"));
 
@@ -39,7 +40,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-app.MapHealthChecks("/healthz");
+app.MapHealthChecks("/healthz").AllowAnonymous();
 
 
 
