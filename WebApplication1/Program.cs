@@ -1,22 +1,10 @@
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using WebApplication1;
 
 var builder = WebApplication.CreateBuilder(args);
- builder.Services.AddHealthChecks();
-
-
-//Custom HealthCheck
-// builder.Services.AddHealthChecks()
-//   .AddCheck<ExampleHealthCheck>("Exaple");
-
-//DbContext HealthChekc
-//builder.Services.AddHealthChecks().AddDbContextCheck<AppDbContext>();
-
-//SQL Server HealthCheck
-// ilder.Services.AddHealthChecks()bu
-//   .AddSqlServer(
-//     builder.Configuration.GetConnectionString("DefaultConnection"));
+builder.Services.AddHealthChecks().AddDbContextCheck<AppDbContext>("DatabaseHealth",tags:new[]{"ready"});
 
 
 
@@ -40,7 +28,17 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-app.MapHealthChecks("/healthz").AllowAnonymous();
+app.MapHealthChecks("/healthz/ready",new HealthCheckOptions()
+{
+  
+  Predicate = healthCheck=> healthCheck.Tags.Contains("ready")
+  
+}).AllowAnonymous();
+app.MapHealthChecks("/healthz/live",new HealthCheckOptions()
+{
+  Predicate = healthCheck=> false // sadece ana olan tag'siz olan çalışır, null dersek default değerdir hepsi çalışır.
+  
+}).AllowAnonymous();
 
 
 
