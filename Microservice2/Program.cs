@@ -1,4 +1,4 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microservice2;var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -21,5 +21,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
+var _ = new AppActivity();
 app.Run();
