@@ -1,6 +1,8 @@
 using Microservice1;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.Extensions.Options;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,18 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient("httpClientWithMicroservice2", context =>
 {
     context.BaseAddress = new Uri("http://localhost:5082");
+
+});
+
+
+builder.Services.AddOpenTelemetry().WithTracing(builder =>
+{
+    builder
+        .AddConsoleExporter()
+        .AddSource("Microservice 1")
+        .AddHttpClientInstrumentation()
+        .AddAspNetCoreInstrumentation();
+
 
 });
 var app = builder.Build();
