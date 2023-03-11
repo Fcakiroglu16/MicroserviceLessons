@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{99F8C561-2827-4C20-AF2B-D58E4DFB0328}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice1", "Microservice1\Microservice1.csproj", "{624C8489-32FB-41B5-8340-EF9D197221B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice2", "Microservice2\Microservice2.csproj", "{8328E224-7DC3-48C4-A5C4-567D72F65CB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerService", "WorkerService\WorkerService.csproj", "{78033ABE-5DB6-4FFE-877F-AF819EBFE224}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,10 +12,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{99F8C561-2827-4C20-AF2B-D58E4DFB0328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99F8C561-2827-4C20-AF2B-D58E4DFB0328}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99F8C561-2827-4C20-AF2B-D58E4DFB0328}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99F8C561-2827-4C20-AF2B-D58E4DFB0328}.Release|Any CPU.Build.0 = Release|Any CPU
 		{624C8489-32FB-41B5-8340-EF9D197221B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{624C8489-32FB-41B5-8340-EF9D197221B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{624C8489-32FB-41B5-8340-EF9D197221B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -24,5 +20,9 @@ Global
 		{8328E224-7DC3-48C4-A5C4-567D72F65CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8328E224-7DC3-48C4-A5C4-567D72F65CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8328E224-7DC3-48C4-A5C4-567D72F65CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78033ABE-5DB6-4FFE-877F-AF819EBFE224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78033ABE-5DB6-4FFE-877F-AF819EBFE224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78033ABE-5DB6-4FFE-877F-AF819EBFE224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78033ABE-5DB6-4FFE-877F-AF819EBFE224}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
