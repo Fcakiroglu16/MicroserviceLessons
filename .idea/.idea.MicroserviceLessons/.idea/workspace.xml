@@ -38,12 +38,19 @@
     <projectFile profileName="WorkerService">WorkerService/WorkerService.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="completed">
-      <change afterPath="$PROJECT_DIR$/Microservice1/ReadMe.txt" afterDir="false" />
+    <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="errors">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice1/AppActivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/AppActivity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice1/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/Controllers/WeatherForecastController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Microservice1/Microservice1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/Microservice1.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Microservice1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice2/AppActivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/AppActivity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice2/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice2/Microservice2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/Microservice2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService/AppActivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService/AppActivity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkerService/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService/Worker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService/WorkerService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService/WorkerService.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678539564381</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="errors">
+      <created>1678546623023</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678546623023</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
@@ -319,7 +333,8 @@
     <MESSAGE value="initial" />
     <MESSAGE value="initial2" />
     <MESSAGE value="completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed" />
+    <MESSAGE value="errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
