@@ -28,6 +28,7 @@ builder.Services.AddOpenTelemetry().WithTracing(builder =>
 {
     builder
         .AddConsoleExporter()
+        .AddZipkinExporter(options => options.Endpoint = new Uri("http://localhost:9411"))
         .AddSource("Microservice 1")
         .AddHttpClientInstrumentation()
         .AddAspNetCoreInstrumentation();

@@ -10,8 +10,8 @@ public class AppActivity
 
     static AppActivity()
     {
-         Sdk.CreateTracerProviderBuilder().AddSource("WorkerService.Console.App")
-            .AddHttpClientInstrumentation().AddConsoleExporter().Build();
+        Sdk.CreateTracerProviderBuilder().AddSource("WorkerService.Console.App")
+            .AddHttpClientInstrumentation().AddConsoleExporter().AddZipkinExporter(options => options.Endpoint = new Uri("http://127.0.0.1:9411/api/v2/spans")).Build();
     }
 
 

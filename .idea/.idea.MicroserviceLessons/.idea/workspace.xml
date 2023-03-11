@@ -39,13 +39,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e509b5b-b039-4e7c-9557-7216d87f2177" name="Changes" comment="completed">
+      <change afterPath="$PROJECT_DIR$/Microservice1/ReadMe.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroserviceLessons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice1/AppActivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/AppActivity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Microservice1/Microservice1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/Microservice1.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Microservice1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice2/AppActivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice2/AppActivity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService/AppActivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService/AppActivity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkerService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WorkerService/WorkerService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WorkerService/WorkerService.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="trace/activity-create" />
+        <entry key="$PROJECT_DIR$" value="trace/open-telemetry" />
       </map>
     </option>
   </component>
@@ -65,6 +63,10 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/fatihcakiroglu/Documents/Github Repositories/MicroserviceLessons/Logging/AddCorrelationIdRequestHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/fatihcakiroglu/Documents/Github Repositories/MicroserviceLessons/Microservice1/AppActivity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/fatihcakiroglu/Documents/Github Repositories/MicroserviceLessons/Microservice1/AppActivity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/fatihcakiroglu/Documents/Github Repositories/MicroserviceLessons/Microservice1/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/fatihcakiroglu/Documents/Github Repositories/MicroserviceLessons/WorkerService/AppActivity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/fatihcakiroglu/Documents/Github Repositories/MicroserviceLessons/WorkerService/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/fatihcakiroglu/Documents/Github Repositories/MicroserviceLessons/WorkerService/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5f06c2196cce4789b3c148130ae67da9c3f000/f7/16727b2d/ManualResetEventSlim.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/47c1abba268399e6292d0b812235ef1b455c5accf61b2a21bb23e9dfea99c1/HttpContext.cs" root0="SKIP_HIGHLIGHTING" />
@@ -76,11 +78,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "settings.editor.selected.configurable": "preferences.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Microservice2: http">
     <configuration name="ConsoleApp" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -294,7 +296,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="trace/zipkin" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
