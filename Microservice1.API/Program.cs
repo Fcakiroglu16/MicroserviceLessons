@@ -10,9 +10,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddMassTransit(x =>
 {
+
+    
+
     x.AddConsumer<EventConsumer>();
     x.UsingRabbitMq((context, config) =>
     {
+        
+        config.UseTimeout(x=>x.Timeout = TimeSpan.FromSeconds(3));
+
+        
+
         // config.UseMessageRetry(r => r.Immediate(5));
 
         // config.UseMessageRetry(r => r.Incremental(5,TimeSpan.FromSeconds(3),TimeSpan.FromSeconds(3)));
@@ -36,11 +44,21 @@ builder.Services.AddMassTransit(x =>
         config.ReceiveEndpoint("queue-event-consumer",
             e => { e.ConfigureConsumer<EventConsumer>(context); });
 
+
+
+        //config.Host(new Uri("amqps://jsqjpfwe:mG9pvqLZB_-NRUz9CO40xPzDC4vFI7P8@woodpecker.rmq.cloudamqp.com/jsqjpfwe"));
+
+
         config.Host(new Uri($"rabbitmq://{builder.Configuration.GetConnectionString("rabbitmqConnection")}"), h =>
         {
+            h.PublisherConfirmation = true;
             h.Username("guest");
             h.Password("guest");
         });
+
+
+
+
     });
 });
 
